@@ -214,22 +214,33 @@ class ViewController: UIViewController, GADBannerViewDelegate {
         
         // Check if the user guessed correctly
         if getNumberFromString(rightCardName) < getNumberFromString(leftCardName) { // Correct
-
+            
+            // Update Scores
+            incrementScore()
+            
             // Update Last Play
             lastPlay = "Correct!"
-
+            
+            // Update Cards
+            generateNewCards()
+            
         } else if getNumberFromString(rightCardName) > getNumberFromString(leftCardName) { // Incorrect
-
+            
+            // Reset Scores
+            resetScore()
+            
             // Update Last Play
             lastPlay = "Incorrect."
             
+            // Generate New Cards
+            generateNewCards()
+            
+        } else {
+            print("Oops, something went wrong!")
+            print(rightCardName)
+            print(leftCardName)
+            print("End Of Debug")
         }
-        
-        // Reset Scores∂
-        resetScore()
-        
-        // Generate New Cards
-        generateNewCards()
         
     }
     
