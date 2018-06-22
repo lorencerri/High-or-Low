@@ -2,7 +2,7 @@
 //  attributionsViewController.swift
 //  High Or Low
 //
-//  Created by Loren School on 6/14/18.
+//  Created by Loren Cerri on 6/14/18.
 //  Copyright © 2018 Plexi Development. All rights reserved.
 //
 
