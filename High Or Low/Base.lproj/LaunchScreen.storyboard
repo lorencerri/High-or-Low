@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -21,12 +21,24 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background" translatesAutoresizingMaskIntoConstraints="NO" id="QoS-q3-qmP">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8yZ-6X-Sno">
+                                <rect key="frame" x="0.0" y="627" width="375" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="eNR-9v-o6a"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="QoS-q3-qmP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Eyy-Nm-IP8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="8yZ-6X-Sno" secondAttribute="trailing" id="HCN-U4-sWz"/>
                             <constraint firstItem="QoS-q3-qmP" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="QMS-V9-q9z"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="8yZ-6X-Sno" secondAttribute="bottom" constant="20" id="ZuY-r5-xPI"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="QoS-q3-qmP" secondAttribute="trailing" id="c1t-B4-mpe"/>
+                            <constraint firstItem="8yZ-6X-Sno" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="nZ5-a0-mUe"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QoS-q3-qmP" secondAttribute="bottom" id="qAL-QF-Rgc"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
