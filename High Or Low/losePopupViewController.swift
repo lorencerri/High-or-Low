@@ -53,8 +53,10 @@ class losePopupViewController: UIViewController {
         
         // Reset Score
         score = 0
-    
+        
+        // Dismiss Popup
         dismiss(animated: true)
+        
     }
     
 
